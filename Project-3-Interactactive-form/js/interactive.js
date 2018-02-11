@@ -82,7 +82,8 @@ document.querySelector(".activities").addEventListener("change", function(){
   var nodeLbl = document.getElementById("nodeLabel");
 
 
-  // If the user selects a workshop, don't allow selection of a workshop at the same date and time 
+  // If the user selects a workshop, don't allow selection of a workshop at the same date and time      
+  if(express.checked == true) {
     express.disabled = true;
     expressLbl.style.color = "grey";
   }
